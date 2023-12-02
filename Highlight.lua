@@ -176,3 +176,5 @@ function Library:Highlight(Source, Lines)
 
     Source.Changed:Connect(highlight_source)
 end
+
+return Library
