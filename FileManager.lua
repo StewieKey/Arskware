@@ -15,7 +15,7 @@ function Library:GetScriptFiles()
     local Scripts = {}
     
     for _, File in pairs(listfiles(ScriptsPath)) do
-        if "lua" in File then
+        if string.find(File, "lua") then
             table.insert(Scripts, File)
         end
     end
